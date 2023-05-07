@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title -->
+        <title>Filmifix</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.svg" />
+
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/96239c21a7.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    colors: {
+                        primary: {
+                            50: "#ffe0b9",
+                            100: "#ffd6a1",
+                            200: "#ffcc8a",
+                            300: "#ffc272",
+                            400: "#ffb85b",
+                            500: "#ffad43",
+                            600: "#ffa32c",
+                            700: "#ff9914",
+                            800: "#e68a12",
+                            900: "#cc7a10",
+                            950: "#b36b0e",
+                        },
+
+                        white: "#ffffff",
+                        black: "#000000",
+                    },
+
+                    extend: {},
+                },
+            };
+        </script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/assets/css/main.css" />
+    </head>
+
+    <body>
+        <!-- Header Section -->
+        <!-- <section>
+        <div class="mx-16">
+            <nav class="flex items-center">
+                <img class="mr-auto ml-2" src="images/logo.svg" alt="logo">
+
+                <ul class="flex space-x-4 text-xl">
+                    <li class="list-none inline-block font-bold">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="list-none inline-block font-bold">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="list-none inline-block font-bold">
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="list-none inline-block font-bold">
+                        <a href="#">Works</a>
+                    </li>
+                    <li class="list-none inline-block font-bold">
+                        <a href="#">Insight</a>
+                    </li>
+                    <li class="list-none inline-block font-bold">
+                        <a href="#">People</a>
+                    </li>
+                </ul>
+                <button class="bg-primary-700 rounded p-1 w-24 m-4 text-xl" style="color:white">Contact us</button>
+
+            </nav>
+        </div>
+    </section> -->
+
+        <!-- Hero Section -->
+        <section class="relative">
+            <!-- For PC -->
+            <div class="hidden lg:block mx-16">
+                <img class="w-full" src="images/hero-img.png" alt="#" />
+                <div
+                    class="absolute top-0 bottom-0 my-auto h-fit left-64"
+                    style="color: white"
+                >
+                    <h1 class="text-9xl">LETS MAKE</h1>
+                    <h1 class="text-9xl font-bold">GREAT THING</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Non quod odio amet aperiam corporis molestias aliquid
+                        <br />
+                        debitis repellat, incidunt officia consequatur harum
+                        voluptatem quasi qui numquam, magnam, omnis alias quis.
+                    </p>
+                    <div class="mt-5">
+                        <button
+                            class="absolute bg-transparent text-white hover:text-white p-1 w-24 border border-white hover:border-transparent rounded"
+                            style="color: white"
+                        >
+                            Get Started
+                        </button>
+                        <i
+                            class="absolute left-32 text-3xl fa-regular fa-circle-play"
+                            style="color: #ffffff"
+                        ></i>
+                        <p class="absolute left-44 m-1" style="color: white">
+                            Play Video
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For Mobile And Tab -->
+            <div class="block lg:hidden mx-4 md:mx-8 relative">
+                <img class="w-full mb-4" src="images/hero-img.png" alt="#" />
+
+                <div
+                    class="static md:absolute top-0 bottom-0 left-8 right-0 h-fit w-fit m-auto text-black md:text-white"
+                >
+                    <h1 class="text-4xl font-bold">LETS MAKE GREAT THING</h1>
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Non quod odio amet aperiam corporis molestias
+                        <br class="hidden md:block" />
+                        aliquid debitis repellat, incidunt officia consequatur
+                        harum voluptatem quasi qui numquam, magnam, omnis alias
+                        quis.
+                    </p>
+                    <div class="mt-5 flex items-center">
+                        <button
+                            class="bg-transparent text-black md:text-white md:hover:text-white p-1 w-24 border border mr-4 md:border-white hover:border-transparent rounded"
+                        >
+                            Get Started
+                        </button>
+
+                        <button class="flex items-center">
+                            <i
+                                class="left-32 text-3xl fa-regular fa-circle-play mr-1"
+                            ></i>
+                            <p class="left-44 m-1">Play Video</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="p-4 md:p-8 lg:p-16">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="flex items-center lg:items-start mb-8 md:mb-0">
+                    <div>
+                        <p class="text-primary-700 text-3xl font-bold">
+                            About Us
+                        </p>
+                        <h1 class="text-4xl lg:text-7xl font-bold">
+                            Bring Your Idea to <br />
+                            Life Through Motion
+                        </h1>
+                        <p class="mb-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Commodi repudiandae explicabo quidem ullam
+                            dolores similique dolorem
+                            <br class="hidden lg:block" />
+                            iusto repellendus, incidunt suscipit magni in
+                            reiciendis. Facilis maiores tempore totam harum, est
+                            quasi.
+                        </p>
+                        <button
+                            class="bg-transparent font-bold text-primary-700 hover:text-primary-700 p-1 w-24 border border-primary-700 hover:border-transparent rounded"
+                            style="color: primary-700"
+                        >
+                            More About Us
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <img
+                        class="w-full md::w-4/5 ml-auto"
+                        src="images/about.svg"
+                        alt="#"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section>
+        <div class="p-4 md:p-8 lg:p-16">
+            <p class="text-primary-700 text-3xl font-bold">Our services</p>
+            <h1 class="text-4xl lg:text-7xl font-bold">We Create Videos That Are <br class="hidden md:block"> High Quality And Professional</h1>
+            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repudiandae explicabo quidem ullam
+                dolores
+                similique dolorem <br class="hidden md:block"> iusto repellendus, incidunt suscipit magni in reiciendis. Facilis maiores tempore
+                totam
+                harum, est quasi.</p>
+
+            <div>
+
+                <button
+                    class=" bg-primary-700 mb-1 md:mb-0  text-white  hover:text-primary-700 p-1 w-24 border border-primary-700 hover:border-transparent rounded "
+                    style="color:white">
+                    Filming Service
+                </button>
+
+                <button
+                    class=" bg-transparent mb-1 md:mb-0 font-bold   hover:text-primary-700 p-1 w-24 border border-black hover:border-transparent rounded "
+                    style="color:primary-700">
+                    Motion Design
+                </button>
+
+                <br class="block md:hidden">
+
+                <button
+                    class=" bg-transparent font-bold   hover:text-primary-700 p-1 w-24 border border-black hover:border-transparent rounded "
+                    style="color:primary-700">
+                    Music Video
+                </button>
+
+                <button
+                    class=" bg-transparent font-bold   hover:text-primary-700 p-1 w-24 border border-black hover:border-transparent rounded "
+                    style="color:primary-700">
+                    Event Video
+                </button>
+
+            </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 items-center box-content my-10 h-96 p-4 border-solid border border-black rounded-md p-4 md:p-8 lg:p-16">
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-bold">Filming Service</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi optio iste quam iusto molestias
+                        animi
+                        illo eaque.</p>
+
+                    <button class="flex items-center text-primary-700 text-2xl font-bold">
+                    <span>Learn More </span>
+                        <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                    </button>
+                </div>
+
+                <div>
+                    <img class="w-full md:w-3 /5 md:ml-auto md:pr-20" src="images/films.svg" alt="#">
+                </div>
+            </div>
+
+    </section>
+
+        <!-- Product Section -->
+        <section>
+        <div class="m-16 relative">
+
+            <img class="w-full" src="images/Productbg-img.png" alt="#">
+            <div class=" absolute text-center top-0 bottom-0 left-0 right-0 m-auto h-fit w-fit" style="color:white">
+                <p class="text-primary-700 text-3xl font-bold">Our Product</p>
+                <h1 class="text-7xl font-bold">We Make Film & Drama</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cum delectus voluptas aliquam labore
+                    dignissimos ut deserunt fuga pariatur quia eius, neque officia minus atque laborum, eaque totam
+                    sequi nisi.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="relative bottom-72 z-40 m-16 grid grid-cols-3 gap-10 px-28">
+
+            <div class="relative rounded-lg shadow-md py-36 " style="background-color: white;">
+                <img class="w-24 mx-auto" src="images/filmcard-img.svg" alt="#">
+                <div class="px-6 py-4">
+                    <div class=" text-xl text-center mb-2">Film Production</div>
+                    <p class="text-gray-700 text-base text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
+                        et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <i
+                    class="absolute right-0 left-0 w-fit mx-auto text-4xl bottom-[-20px] fa-solid fa-circle-chevron-down text-primary-700"></i>
+            </div>
+
+            <div class="relative rounded-lg shadow-md py-36 " style="background-color: white;">
+                <img class="w-24 mx-auto" src="images/filmcard-img.svg" alt="#">
+                <div class="px-6 py-4">
+                    <div class=" text-xl text-center mb-2">Creative Direction</div>
+                    <p class="text-gray-700 text-base text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
+                        et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <i
+                    class="absolute right-0 left-0 w-fit mx-auto text-4xl bottom-[-20px] fa-solid fa-circle-chevron-down text-primary-700"></i>
+            </div>
+
+            <div class="relative rounded-lg shadow-md py-36 " style="background-color: white;">
+                <img class="w-24 mx-auto" src="images/filmcard-img.svg" alt="#">
+                <div class="px-6 py-4">
+                    <div class=" text-xl text-center mb-2">Content Production</div>
+                    <p class="text-gray-700 text-base text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
+                        et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <i
+                    class="absolute right-0 left-0 w-fit mx-auto text-4xl bottom-[-20px] fa-solid fa-circle-chevron-down text-primary-700"></i>
+            </div>
+        </div>
+
+
+    </section>
+
+        <!-- Project Section -->
+        <!-- <section>
+        <div class="grid grid-cols-2 m-16">
+            <div>
+                <p class="text-primary-700 text-3xl font-bold">Our Project</p>
+                <h1 class="text-7xl font-bold">We're Passionate<br>About Video <br> Production and It <br>Shows in Our
+                    work
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repudiandae explicabo quidem ullam
+                    dolores
+                    similique dolorem <br> iusto repellendus, incidunt suscipit magni in reiciendis. Facilis maiores
+                    tempore
+                    totam
+                    harum, est quasi.</p>
+                <button
+                    class=" bg-transparent font-bold text-primary-700  hover:text-primary-700 p-1 w-24 border border-primary-700 hover:border-transparent rounded "
+                    style="color:primary-700">
+                    View All
+                </button>
+            </div>
+            <div>
+                <img class="ml-auto" src="images/project-img.svg" alt="#">
+            </div>
+        </div>
+    </section> -->
+
+        <!-- Team Section -->
+        <!-- <section>
+        <div class="m-16">
+            <div>
+                <p class="text-primary-700 text-3xl font-bold">Our People</p>
+                <h1 class="text-7xl font-bold">See Our All Expert Creator
+                </h1>
+            </div>
+            <div class="grid grid-cols-4 gap-10">
+                <div>
+                    <img class="w-full" src="images/ppl-1.png" alt="#">
+                    <p class="text-primary-700 text-xl font-bold">Mr Bean</p>
+                    <p class="text-xl">Motion Designer</p>
+                </div>
+
+                <div>
+                    <img class="w-full" src="images/ppl-2.png" alt="#">
+                    <p class="text-primary-700 text-xl font-bold">Mr Bean</p>
+                    <p class="text-xl">Motion Designer</p>
+                </div>
+                <div>
+                    <img class="w-full" src="images/ppl-3.png" alt="#">
+                    <p class="text-primary-700 text-xl font-bold">Mr Bean</p>
+                    <p class="text-xl">Motion Designer</p>
+                </div>
+                <div>
+                    <img class="w-full" src="images/ppl-4.png" alt="#">
+                    <p class="text-primary-700 text-xl font-bold">Mr Bean</p>
+                    <p class="text-xl">Motion Designer</p>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+
+        <!-- Price Section -->
+        <!-- <section>
+        <div class="m-16">
+            <p class="text-primary-700 text-3xl font-bold">Price Plan</p>
+            <h1 class="text-7xl font-bold">Compatible Price & Plan
+            </h1>
+            <div class="border">
+                <div>
+                    <p>Business</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam dignissimos consequuntur
+                        cupiditate neque praesentium saepe culpa autem eum incidunt, vitae optio repudiandae voluptate
+                        eius
+                        dolorum unde! Soluta, nemo dolore!</p>
+
+                    <p>$5330/project</p>
+
+                    <hr>
+
+                    <p>Professional Videographer</p>
+                    <p>Editing and Revision</p>
+                    <p>Detailed on Script</p>
+                    <p>Director on Script</p>
+                    <p>Graphics, Edit, Sound and music</p>
+
+                    <button
+                        class=" bg-transparent font-bold   hover:text-primary-700 p-1 w-24 border border-black hover:border-transparent rounded "
+                        style="color:primary-700">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+
+        <!-- Client Section-->
+        <!-- <section>
+        <div class="m-16">
+            <div>
+                <p class="text-primary-700 text-3xl font-bold">Our Trusted Client</p>
+                <h1 class="text-7xl font-bold">See Our All Trusted Client </h1>
+            </div>
+
+            <div class="my-16 grid grid-cols-4 gap-10">
+                <div class="flex box-border border rounded-md h-60 w-full">
+                    <img class="m-auto" src="images/cl-1.svg#" alt="">
+                </div>
+
+                <div class="flex box-border border rounded-md h-60 w-full">
+                    <img class="m-auto" src="images/cl-2.svg" alt="">
+                </div>
+
+                <div class="box-border border rounded-md h-60 w-full" style="background-color: black;">
+                    <div class="text-center m-10">
+                        <p class="text-5xl font-bold" style="color:white">Music Asia</p>
+                        <p style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                            necessitatibus eveniet dolores
+                            incidunt minima dignissimos officiis! Alias magnam magni iusto animi ipsum dolores repellat
+                            ab
+                            aliquam? Iure culpa quam quia?</p>
+                    </div>
+                </div>
+
+                <div class="flex box-border border rounded-md h-60 w-full">
+                    <img class="m-auto" src="images/cl-3.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+        <!-- Testimonial Section -->
+        <!-- <section>
+        <div class="m-16">
+            <p class="text-primary-700 text-3xl font-bold">Testimonials</p>
+            <h1 class="text-7xl font-bold">We Tell Your Story In A Way <br> That Engage and Inspires
+            </h1>
+        </div>
+        <div
+            class="grid grid-cols-2  m-16 items-center box-content h-96 p-4 border-solid border border-black rounded-md">
+            <div class="p-16">
+                <i class="fa-solid fa-quote-right text-primary-700 text-8xl"></i>
+                <p class="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi optio iste quam iusto
+                    molestias
+                    animi
+                    illo eaque.</p>
+                <div class="my-5">
+                    <p class="text-primary-700 text-3xl font-bold">Jhonny Depp</p>
+                    <p class="text-2xl">Lorem Ipsum Dolar</p>
+                </div>
+            </div>
+            <div>
+                <img class="w-96 ml-auto pr-20" src="images/ppl-4.png" alt="#">
+
+            </div>
+        </div>
+    </section> -->
+
+        <!-- Map Section -->
+        <!-- <section>
+        <div class="m-16">
+            <div>
+                <p class="text-primary-700 text-3xl font-bold">Our Location</p>
+                <h1 class="text-7xl font-bold">Find Us On Online Or Offline
+                </h1>
+            </div>
+            <div class="flex justify-between my-16">
+                <img class="w-4/5" src="images/map-img.png" alt="#">
+
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <p class="text-primary-700 text-3xl font-bold">Our Address-</p>
+                        <p class="text-2xl">18, Shahid Tajuddin Ahmed Sarani, <br>
+                            Moghbazar, <br> Dhaka,
+                            Bangladesh.</p>
+
+                    </div>
+                    <div class="">
+                        <p class="text-primary-700 text-3xl font-bold"> Social Media-</p>
+                        <div class="flex text-5xl space-x-10">
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+        <!-- Blog Section -->
+        <!-- <section>
+        <div class="m-16">
+            <p class="text-primary-700 text-3xl font-bold">Our Blogs</p>
+            <h1 class="text-7xl font-bold">Latest Blog an Articles
+            </h1>
+        </div>
+
+        <div class="m-16 grid grid-cols-3 gap-10">
+
+            <div>
+                <img class="w-full" src="images/blog-1.svg" alt="#">
+                <p class="text-3xl font-bold my-5">Five Video Editing Tips</p>
+                <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas pariatur
+                    veniam sequi,
+                    non reprehenderit eveniet tenetur eligendi, eos dignissimos expedita autem provident reiciendis
+                    dicta. Laudantium qui laboriosam quia delectus.
+                </p>
+                <p class="my-5 text-primary-700 text-2xl font-bold">Learn More <i
+                        class="fa-solid fa-arrow-right-long"></i>
+                </p>
+            </div>
+
+            <div>
+                <img class="w-full" src="images/blog-2.svg" alt="#">
+                <p class="text-3xl font-bold my-5">Five Video Editing Tips</p>
+                <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas pariatur
+                    veniam sequi,
+                    non reprehenderit eveniet tenetur eligendi, eos dignissimos expedita autem provident reiciendis
+                    dicta. Laudantium qui laboriosam quia delectus.
+                </p>
+                <p class="my-5 text-primary-700 text-2xl font-bold">Learn More <i
+                        class="fa-solid fa-arrow-right-long"></i>
+                </p>
+            </div>
+
+            <div>
+                <img class="w-full" src="images/blog-3.svg" alt="#">
+                <p class="text-3xl font-bold my-5">Five Video Editing Tips</p>
+                <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas pariatur
+                    veniam sequi,
+                    non reprehenderit eveniet tenetur eligendi, eos dignissimos expedita autem provident reiciendis
+                    dicta. Laudantium qui laboriosam quia delectus.
+                </p>
+                <p class="my-5 text-primary-700 text-xl font-bold">Learn More <i
+                        class="fa-solid fa-arrow-right-long"></i>
+                </p>
+            </div>
+
+        </div>
+    </section> -->
+
+        <!-- Support Section -->
+        <!-- <section class="relative pb-96 mb-20">
+        <div class="m-16 relative">
+
+            <img class="w-full" src="images/support-bg.svg" alt="#">
+            <div class=" absolute text-center top-0 bottom-0 left-0 right-0 m-auto h-fit w-fit" style="color:white">
+                <h1 class="text-7xl">Ready To Capture Your <br> Brand Vision?</h1>
+            </div>
+
+        </div>
+
+        <div class="absolute bottom-0 z-40 m-16 grid grid-cols-3 gap-10 px-28">
+
+            <div class="relative rounded-lg shadow-md py-36 " style="background-color: white;">
+                <img class="w-24 mx-auto" src="images/filmcard-img.svg" alt="#">
+                <div class="px-6 py-4">
+                    <div class=" text-xl text-center mb-2">Customer Support</div>
+                    <p class="text-gray-700 text-xl text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
+                        et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+
+                    <button
+                        class="absolute right-0 left-5 mx-auto bg-transparent m-10 p-2 text-xl hover:text-primary-700 w-28 border border-black hover:border-transparent rounded "
+                        style="color:primary-700">
+                        Chat Now
+                    </button>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="relative rounded-lg shadow-md py-36" style="background-color: white;">
+
+                <img class="w-24 mx-auto" src="images/filmcard-img.svg" alt="#">
+
+                <div class="px-6 py-4">
+
+                    <div class=" text-xl text-center mb-2">Ticket Support</div>
+
+                    <p class="text-gray-700 text-xl text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
+                        et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+
+                    <button
+                        class="absolute right-0 left-5 mx-auto bg-transparent m-10 p-2 text-primary-700 text-xl hover:text-primary-700 w-28 border border-black hover:border-transparent rounded "
+                        style="color:primary-700">
+                        Send Ticket
+                    </button>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="relative rounded-lg shadow-md pt-36 " style="background-color: white;">
+                <img class="w-24 mx-auto" src="images/filmcard-img.svg" alt="#">
+                <div class=" realtive px-6 py-4">
+                    <div class=" text-xl text-center mb-2">Read Article</div>
+                    <p class="text-gray-700 text-xl text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
+                        et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+
+                    <button
+                        class="absolute right-0 left-5 mx-auto bg-transparent m-10 p-2 text-xl  hover:text-primary-700 w-28 border border-black hover:border-transparent rounded "
+                        style="color:primary-700">
+                        Read Now
+                    </button>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section> -->
+
+        <!-- Footer Section -->
+        <!-- <section>
+        <div class="m-16 box-border border rounded-3xl" style="background-color: black;">
+            <div class="grid grid-cols-4  p-16 ">
+                <div>
+                    <img src="images/headerlogo.svg" alt="logo">
+                    <p class="my-5 text-2xl" style="color:grey">Clarity gives you the blocks and <br> components
+                        you
+                        need
+                        to
+                        create <br>
+                        a truly professional
+                        website</p>
+
+                    <div class="space-x-5">
+                        <i class="fa-brands fa-square-instagram text-5xl" style="color:white"></i>
+                        <i class="fa-brands fa-youtube text-5xl" style="color:white"></i>
+                        <i class="fa-brands fa-square-facebook text-5xl" style="color:white"></i>
+                        <i class="fa-brands fa-linkedin text-5xl" style="color:white"></i>
+                    </div>
+
+                </div>
+
+                <div>
+                    <ul style="color:white" class="text-2xl space-y-5">
+                        <li style="color:grey">Company</li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Works</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul style="color:white" class="text-2xl space-y-5">
+                        <li style="color:grey">Help</li>
+                        <li>
+                            <a href="#">Customer Support</a>
+                        </li>
+                        <li>
+                            <a class="text-primary-700" href="#">Contact Info</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul style="color:white" class="text-2xl space-y-5">
+                        <li style="color:grey">Newsletter</li>
+                        <li>
+                            <input placeholder="Enter your email address" class="bg-white w-full h-14 pl-28 rounded-xl"
+                                type="email" name="email" id="Enter your email address">
+                        </li>
+                        <li>
+                            <Button class="bg-primary-700 w-full h-14 rounded-xl">Subscribe Now</Button>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="text-center border-t py-10 mx-16 text-2xl" style="color:white">
+                <p>© Copyright 2022, All Rights Reserved by The YOLO Studio</p>
+            </div>
+        </div>
+    </section> -->
+    </body>
+</html>
